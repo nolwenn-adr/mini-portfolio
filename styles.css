@@ -1,0 +1,243 @@
+.gilda-display-regular {
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+*{
+    box-sizing: border-box;
+    font-family: system-ui, 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+#container{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+    display: flex;
+    position: relative;
+        top: 0;
+        left: 0;
+    margin: 0;
+    background-color: #F8f5e4;
+    color: #542e71;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+        top: 0;
+        left: 0;
+    width: 50px;
+    max-width: 400px;
+    height: 100%;
+    background-color: #172a6f;
+    color: #F8f5e4;
+    background-image: url(e216d8b97a37fef76a725989560fcd7f.jpg);
+    background-size: cover;
+    border: 0;
+}
+
+#small-screen{
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+span{
+    position: absolute;
+    top: -999px;
+    left: 999px;
+}
+
+
+#retour {
+    display: none;
+}
+
+#nav-li{
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#burger, #retour {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+ol li{
+    list-style: none;
+    list-style-position: inside;
+}
+
+.navli{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    margin: 1rem 2rem;
+    background-color: #6a66a37e;
+    border-radius: 25rem;
+    font-style: oblique;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px #f8f5e459;
+}
+
+.navli:hover{
+    border: 2px solid #E0DAD2;
+}
+
+.navli:active{
+    background-color: #6a66a3cb;
+    border: 2px solid #172A6F;
+    text-shadow: 2px 2px #172a6f69;
+}
+
+
+nav a, nav a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+main{
+    padding: 1rem;
+    margin: 0 0 0 50px;
+    max-width: 900px;
+}
+
+.main-section{
+    margin: 4rem 0;
+}
+
+.separator-left{
+    border-bottom: 2px solid #84A9C0;
+    margin: 1rem 0 1rem 0;
+    width: 30%;
+}
+
+.separator-right{
+    border-bottom: 2px solid #84A9C0;
+    margin: 1rem 0;
+    margin-left: 70%;
+    width: 30%;
+}
+
+#titre{
+    font-family: "Gilda Display", serif;
+    font-size: 5em;
+    font-weight: 100;
+    text-align: center;
+    margin: 2rem 0;
+    text-shadow: 3px 3px #542e7150;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 1rem 0;
+    font-style: oblique;
+    font-weight: 600;
+    text-shadow: 2px 2px #542e7150;
+}
+
+#Introduction h1, #Ete h1, #Hiver h1{
+    text-align: start;
+    margin-left: 2rem;
+}
+
+#Automne h1, #Printemps h1{
+    text-align: end;
+    margin-right: 2rem;
+}
+
+h2{
+    font-size: 1.5em;
+    margin: 1rem 0;
+}
+
+p{
+    font-size: 1em;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+ul{
+    margin: 1rem 0;
+}
+
+code{
+    display: block;
+    margin: 2rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 2rem auto;
+    /* border: 2px solid #542e71; */
+    max-height: 20rem;
+    width: 80%;
+}
+
+#iris{
+    max-width: 736px;
+    width: 100%;
+}
+
+
+/* _______________________GRANDS ECRANS_______________________ */
+
+@media (min-width: 780px) {
+
+main{
+    margin-left: 400px;
+    padding: 2rem;
+    /* position: relative;
+    left: 30%; */
+    width: 70%;
+}
+
+#small-screen{
+    display: none;
+}
+
+#navbar{
+    width: 400px;
+    max-width: 736px;
+    background-size: cover;
+}   
+
+#nav-li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.navli {
+    height: 8rem;
+    width: 17rem;
+}
+
+}
