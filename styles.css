@@ -1,0 +1,381 @@
+:root{
+    --mint: #44C18D;
+    --aquamarine: #52FFB8;
+    --iris: #704AB5;
+    --gunmetal: #202727;
+    --ghost-white: #F4F3F9;
+    --lavender: #E5E4F0;
+    --skobeloff: #007C77;
+    --slate-blue: #8974E6;
+    --night: #0A0D0D;
+    --night-tr: #0A0D0Db3;
+}
+
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "King";
+    src: url('Kingthings-Flourishes-fontfacekit/web fonts/kingthingsflourishes_regular_macroman/Kingthings_Flourishes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+body{
+    background-color: var(--gunmetal);
+    color: var(--lavender);
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    height: 100vh;
+}
+
+p, h1, h2{
+    text-align: center;
+}
+
+p:last-of-type{
+    margin-bottom: 0;
+}
+
+
+h1{
+    font-weight: 400;
+    font-size: 2.5em;
+    color: var(--ghost-white);
+    text-shadow: 
+        0 0 5px var(--night),
+        0 0 10px var(--night),
+        0 0 20px var(--lavender),
+        0 0 25px var(--lavender);
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    border-radius: 5rem;
+    border: var(--mint) 5px double;
+    padding: 1rem;
+    width: 70%;
+    box-shadow: 0 0 10px var(--aquamarine);
+    background: var(--night-tr);
+    font-size: 2em;
+}
+
+.header{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background: linear-gradient(
+        var(--night),
+        var(--gunmetal)
+    )
+    ;
+}
+
+
+#logo-box, #nav-bar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+#logo-box{
+    justify-content: center;
+}
+
+#nav-bar{
+    width: 80%;
+    height: 50%;
+    justify-content: space-around;
+    max-width: 1400px;
+}
+
+#header-img{
+    width: 54px;
+    height: 54px;
+}
+
+#logo-text{
+    font-size: 2.5em;
+    width: 50%;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: var(--lavender);
+    color: var(--gunmetal);
+    padding: 5px;
+    width: 30%;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.nav-text{
+    display: none;
+}
+
+a{
+    color: var(--gunmetal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+    box-shadow: 2px 2px var(--iris);
+}
+
+a:active{
+    color: var(--iris);
+    box-shadow: 2px 2px var(--iris);
+}
+
+.img-link{
+    height: 18px;
+    width: 18px;
+}
+
+
+main{
+    position: relative;
+    top: 8rem;
+}
+
+video{
+    position: absolute;
+}
+
+#vid-presentation, #title, #stories, #products, #contact{
+    padding: 1rem;
+}
+
+#title{
+    background-image: url(titlesnake.jpg);
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#vid-presentation p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2em;
+    /* background-color: var(--night-tr); */
+    background-clip: border-box;
+    border-radius: 15px;
+    width: 80%;
+}
+
+#vid-presentation {
+    height: 20rem;
+}
+
+#contact{
+    background-image: url(titleboreal.jpg);
+    background-size: cover;
+    height: 20rem;
+}
+
+    #contact-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 0;
+    }
+
+
+    #contact-box p{
+        background-color: var(--night-tr);
+        padding: 1rem;
+        font-size: 1em;
+        border-radius: 25px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        height: 8rem;
+    }
+
+    #email, #submit{
+        border-radius: 25px;
+        width: 100%;
+        height: 2rem;
+        padding: 1rem;
+        background-color: var(--lavender);
+        color: var(--gunmetal);
+        font-family: "Quicksand";
+        border: 0;
+    }
+
+    #email{
+        width: 70%;
+        max-width: 800px;
+    }
+
+    #submit{
+        width: 30%;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    #submit:hover{
+        box-shadow: 2px 2px var(--iris);
+    }
+
+    #submit:active{
+        color: var(--iris);
+        box-shadow: 2px 2px var(--iris);
+    }
+
+#stories{
+    height: fit-content;
+}
+
+
+    figure{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 3rem;
+        background: radial-gradient(
+            var(--gunmetal) 60%,
+            var(--night)
+        );
+        box-shadow: 2px 2px 5px 10px var(--night);
+        border: var(--iris) 6px double;
+    }
+
+    .portrait{
+        width: 80%;
+        margin-bottom: 0.5rem;
+        border-radius: 25px;
+    }
+
+    figcaption{
+        font-size: 1em;
+        padding: 1rem;
+    }
+
+    #foreign{
+        font-family: "King";
+        word-spacing: 200%;
+    }
+
+    footer{
+        min-height: 8rem;
+        position: relative;
+        top: 8rem;
+        background: linear-gradient(
+            var(--gunmetal),
+            var(--night)
+        );
+    }
+
+    .margin-top {
+        margin-top: 1rem;
+    }
+
+
+@media only screen and (min-width: 500px) and (max-width:767px){
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    .nav-text{
+        display: block;
+        margin-left: 1rem;
+    }
+
+    
+    .portrait{
+        width: 50%;
+    }
+
+    figure{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    figcaption{
+        font-size: 1.2em;
+        padding: 0 1rem;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    .nav-text{
+        display: block;
+        margin-left: 1rem;
+    }
+
+    #grid{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    figure{
+        width: 30%;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .portrait{
+        width: 100%;
+    }
+
+    figcaption{
+        font-size: 1.2em;
+        padding: 1rem 0;
+        width: 100%;
+    }
+}
