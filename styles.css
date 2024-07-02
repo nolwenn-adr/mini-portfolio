@@ -1,0 +1,138 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+    color: #051116;
+    background-color: #EAF1F5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  
+  form {
+    min-width: 500px;
+    max-width: 1000px;
+  }
+  
+  .page{
+    background-color: #DAEFFB;
+    width: 70%;
+    margin: 2em auto;
+    padding: 1em 2em;
+    min-width: 500px;
+    max-width: 1000px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #title{
+    font-size: 3rem;
+    font-weight: 300;
+    width: 80%;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border: 0;
+    min-width: 300px;
+  }
+  
+  label{
+    display: block;
+    margin: 0.5em 0;
+  }
+  
+  p[id="description"]{
+    text-align: center;
+    width: 80%;
+    margin: 2em auto;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    min-height: 2em;
+    margin-top: 0.5em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea{
+    border-radius: 8px;
+    border : 0;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  textarea{
+    resize: vertical;
+  }
+
+  fieldset{
+    width: 95%;
+    padding: 1rem;
+    border: 0;
+  }
+
+  legend{
+    font-size: 1.5em;
+    margin: 2rem 0 1rem 1rem;
+  }
+
+  section{
+    display: inline-block;
+    margin: 0 3em;
+  }
+  
+  .check1{
+    text-align: left;
+  }
+  
+  .check2{
+    text-align: right;
+  }
+  
+  p{
+    margin-bottom: 0;
+    margin-top: 2em;
+  }
+
+  .title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  #submit {
+    border-radius: 8px;
+    background-color: #F7FCFF;
+    height: 3rem;    
+    font-weight: 100;
+  }
+
+  #submit:hover {
+    border : 2px solid #5AB7ED;
+    background-color: #F7FCFF;
+  }
+
+  
+  
+  /*input{
+    margin-top: -10px;
+    margin-bottom: 10px
+  }*/

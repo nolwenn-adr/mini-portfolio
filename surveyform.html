@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="page">
+      <div class="title-box">
+          <h1 id="title">Existential Crisis Help Center</h1>
+          <h2>Preliminary Form</h2>
+          <p id="description">Welcome to the <em>Existential Crisis Help Center</em>. We are glad you've found your way to us so we may assist you navigate your current state of dread. Fill the following form so we can match you with one of our trained entities. Please keep in mind we are incapable of moral judgements or empathy. We are ready to hear you.</p>
+      </div>
+      <form id="survey-form">
+           <fieldset>
+      <legend>Basic Information</legend>
+        <label id="name-label" for="name" class="inline">Full Name
+          <input id="name" name="name" type="text" required placeholder="Enter your name here"/>
+        </label>
+        <label id="email-label" for="email"class="inline">Email
+          <input id="email" name="email" type="email" required placeholder="Enter your email here"/>
+        </label>
+        <label id="number-label" for="number"class="inline">Age
+         <input id="number" name="number" type="number" min="3" max="130" placeholder="Enter your age here"/>
+        </label>
+  </fieldset>
+  <fieldset><legend>Current state</legend>
+        <label id="radio-label" for="radio">Consciousness state:
+          <input id="radio" type="radio" name="radio" value="6" checked/> Awake
+         <input type="radio" name="radio" value="7"/> Asleep
+         <input type="radio" name="radio" value="8"/> Unsure
+        </label>
+        <label id="checkbox-label"><p>In the last hours you have felt:</p>
+        <section>
+         <label for="joy" class="check1"><input id="joy" type="checkbox" value="1" />Joy</label>
+         <label for="anger" class="check1"><input id="anger" type="checkbox" value="2" /> Anger</label> 
+         <label for="disgust" class="check1"><input id="disgust" type="checkbox" value="3" /> Disgust</label>
+         <label for="sadness" class="check1"><input id="sadness" type="checkbox" value="4" /> Sadness</label>
+        </section>
+        <section>
+         <label for="fear" class="check2">Fear <input id="fear" type="checkbox" value="5" /></label>
+         <label for="other" class="check2">Other <input id="other" type="checkbox" value="15" /></label>
+         <label for="recoll" class="check2">No recollection <input id="recoll" type="checkbox" value="16" /></label>
+         <label for="none" class="check2">Nothing <input id="none" type="checkbox" value="17" /></label>
+        </section>
+        </label>
+        <label for="dropdown"><p>Would you say you are satisfied with the current state of life?</p>
+        <select id="dropdown">
+           <option value="">Select an option:</option>
+           <option value="9">Very satisfied</option>
+           <option value="10">Somewhat satisfied</option>
+           <option value="11">Neutral</option>
+           <option value="12">Somewhat dissatisfied</option>
+           <option value="13">Very dissatisfied</option>
+           <option value="14">Please stop asking me all these questions</option>
+          </select>
+        </label>
+    </fieldset>
+    <fieldset><legend>Summary</legend>
+      In the space right below, you are as free as you can be to tell us about what you are experiencing.
+        <label for="comment">
+         <textarea id="comment"></textarea>
+        </label>
+    </fieldset>           
+        <label for="submit">
+         <input for="survey-form" type="submit" id="submit" value="Confirmer" />
+        </label>
+  </form>
+  </div>
+</html>
